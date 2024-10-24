@@ -1,83 +1,127 @@
-<!DOCTYPE hmtl>
-<html>
-    <head>
-        <body>
-            <style>
-                h1{
-                    color: white;
-                    font-size: 40px;
-                    text-align: start;
-                    font-family: 'Times New Roman', Times, serif; 
-        
-                } 
-                body{
-                    color: white;
-                   background-color: #333;
-                   font-family: 'Times New Roman', Times, serif;
-                }
-                p{
-                   color:white;
-                
-                }
-                 
-           </style> 
-            <h1>Work experience page</h1>
-            <h1>Places of experience and activity done</h1>
-            <table border="2px" width="800px">
-                <tr class="moi">
-                    <td>No</td>
-                    <td>Place</td>
-                    <td>Duration(for how long)</td>
-                    <td>Activity done</td>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; 
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        table {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        th, td {
+            text-align: center;
+            padding: 10px;
+        }
+        th {
+            background-color: #007bff; 
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #e9ecef;
+        }
+        tr:nth-child(odd) {
+            background-color: #f1f3f5;
+        }
+        .btn-custom {
+            background-color: #6c757d; 
+            border: none;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #5a6268;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+        }
+        .nav-link:hover {
+            text-decoration: underline; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Work Experience Page</h1>
+        <h2>Places of Experience and Activities Done</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Place</th>
+                    <th>Duration</th>
+                    <th>Activities Done</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>1</td>
-                    <td>Internship (saltel)</td>
-                    <td>2019(1 month)</td>
-                    <td> <ul>
-                        <li>Hardware maintenance</li>
-                        <li>window installations</li>                            
-                    </ul>
+                    <td>Internship (Saltel)</td>
+                    <td>2019 (1 month)</td>
+                    <td>
+                        <ul>
+                            <li>Hardware Maintenance</li>
+                            <li>Windows Installations</li>
+                        </ul>
                     </td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>Internship (saltel)</td>
-                    <td>2021(1 month)</td>
-                    <td>Cable termination</td>
+                    <td>Internship (Saltel)</td>
+                    <td>2021 (1 month)</td>
+                    <td>Cable Termination</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>Internship (saltel)</td>
-                    <td>2022(1 month)</td>
-                    <td>LAN setup</td>
+                    <td>Internship (Saltel)</td>
+                    <td>2022 (1 month)</td>
+                    <td>LAN Setup</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>Recess workshop</td>
-                    <td>2024(3 months)</td>
-                    <td> <ul>
-                        <li>Hardware maintenance</li>
-                        <li>LAN setup</li>
-                        <li>Cyber security</li>                
-                    </ul></td>
+                    <td>Recess Workshop</td>
+                    <td>2024 (3 months)</td>
+                    <td>
+                        <ul>
+                            <li>Hardware Maintenance</li>
+                            <li>LAN Setup</li>
+                            <li>Cyber Security</li>
+                        </ul>
+                    </td>
                 </tr>
-            </table>
-            <ul>
-                <h1>Other skills</h1>
-                <li>collaboration</li>
-                <li>interpersonal skills</li>
-                <li>word press</li>
+            </tbody>
+        </table>
+        <h2>Other Skills</h2>
+        <ul>
+            <li>Collaboration</li>
+            <li>Interpersonal Skills</li>
+            <li>WordPress</li>
+        </ul>
+
+        <nav class="text-center mt-4">
+            <ul class="list-unstyled">
+                <button class="btn btn-custom"><a href="assignment.html" class="nav-link">Home Page</a></button>
+                <button class="btn btn-custom"><a href="profile.html" class="nav-link">Profile Page</a></button>
+                <button class="btn btn-custom"><a href="education.html" class="nav-link">Education Page</a></button>
+                <button class="btn btn-custom"><a href="gallery.html" class="nav-link">Gallery Page</a></button>
             </ul>
-            
-             <nav>
-                <ul>
-                    <button><li><a href ="assignment.html">Home page</a><br></li></button>
-                    <button><li><a href ="profile.html">Profile page</a></li></button>
-                    <button><li><a href ="education.html">Education page</a></li></button>
-                    <button><li><a href ="Gallery.html">Gallery page</a></li></button><br><br>                   
-                </ul>
-            </nav>              
-         </body>
-    </head>
+        </nav>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
