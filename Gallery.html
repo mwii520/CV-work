@@ -1,39 +1,85 @@
-<!DOCTYPE hmtl>
-<html>
-    <head>
-        <body>
-            <style>
-                h1{
-                    color: white;
-                    font-size: 40px;
-                    text-align: start;
-                    font-family: 'Times New Roman', Times, serif; 
-        
-                }
-                body{
-                    color: white;
-                    background-color:#333;
-                    font-family: 'Times New Roman', Times, serif;
-                }
-                
-                     
-           </style>
-            <h1>Gallery page</h1>
-            <h1> Visit to Seroma</h1>
-            <img src="Visit to Kayunga.jpeg" controls width="600px" height="400px"></img><br>
-            <h1>Hardware maintenance</h1>
-            <img src="Hardware maintenance.jpeg" controls width="600px" height="400px"></img><br>
-            <h1>ethernet cable termination</h1>
-            <img src="cable termination.jpeg" controls width="600px" height="400px"></img><br><br>
-            <button><a href ="assignment.html">Home page</a></button>    
-            <button><a href ="profile.html">Profile page</a></button>
-            <button><a href ="education.html">Education page</a></button>
-            <button><a href ="work experience.html">Work experience page</a>ss</button><br><br> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; 
+            color: #333;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1 {
+            font-size: 40px;
+            margin-top: 20px;
+            color: #007bff; 
+            text-align: center; 
+        }
+        .img-container {
+            margin-bottom: 30px;
+            text-align: center; 
+            transition: transform 0.2s;
+        }
+        .img-container:hover {
+            transform: scale(1.05); 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .img-fluid {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover; 
+            border-radius: 10px;
+        }
+        .btn-custom {
+            background-color: #6c757d; 
+            border: none;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #5a6268; 
+        }
+        .nav-link {
+            color: white; 
+            text-decoration: none; 
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gallery Page</h1>
+        <div class="row">
+            <div class="col-md-4 img-container">
+                <h2>Visit to Seroma</h2>
+                <img src="Visit to Kayunga.jpeg" alt="Visit to Kayunga" class="img-fluid">
+            </div>
 
-                
-            
-                                
-         </body>
-    </head>
+            <div class="col-md-4 img-container">
+                <h2>Hardware Maintenance</h2>
+                <img src="Hardware maintenance.jpeg" alt="Hardware Maintenance" class="img-fluid">
+            </div>
+
+            <div class="col-md-4 img-container">
+                <h2>Ethernet Cable Termination</h2>
+                <img src="cable termination.jpeg" alt="Ethernet Cable Termination" class="img-fluid">
+            </div>
+        </div>
+
+        <nav class="text-center mt-4">
+            <button class="btn btn-custom"><a href="assignment.html" class="nav-link">Home Page</a></button>
+            <button class="btn btn-custom"><a href="profile.html" class="nav-link">Profile Page</a></button>
+            <button class="btn btn-custom"><a href="education.html" class="nav-link">Education Page</a></button>
+            <button class="btn btn-custom"><a href="work experience.html" class="nav-link">Work Experience Page</a></button>
+        </nav>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
-            
