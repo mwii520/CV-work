@@ -3,34 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery Page</title>
+    <title>Education Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
             background-color: #f8f9fa; 
             color: #333; 
-            font-family: 'Times New Roman', Times, serif; 
+            font-family: 'Arial', sans-serif;
         }
         h1 {
             font-size: 40px;
-            margin-top: 20px;
-            color: #007bff; 
-            text-align: center; 
+            margin-bottom: 20px;
+            color: #007bff;
         }
-        .img-container {
-            margin-bottom: 30px;
+        table {
+            margin-bottom: 20px;
+        }
+        th, td {
             text-align: center;
-            transition: transform 0.2s; 
+            padding: 10px;
         }
-        .img-container:hover {
-            transform: scale(1.05); 
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+        th {
+            background-color: #007bff;
+            color: white;
         }
-        .img-fluid {
-            width: 100%; 
-            height: 200px; 
-            object-fit: cover; 
-            border-radius: 10px;
+        tr:nth-child(even) {
+            background-color: #e9ecef; 
+        }
+        tr:nth-child(odd) {
+            background-color: #f1f3f5; 
         }
         .btn-custom {
             background-color: #6c757d; 
@@ -39,11 +40,11 @@
             transition: background-color 0.3s;
         }
         .btn-custom:hover {
-            background-color: #5a6268; 
+            background-color: #5a6268;
         }
         .nav-link {
             color: white;
-            text-decoration: none; 
+            text-decoration: none;
         }
         .nav-link:hover {
             text-decoration: underline; 
@@ -52,29 +53,57 @@
 </head>
 <body>
     <div class="container">
-        <h1>Gallery Page</h1>
-        <div class="row">
-            <div class="col-md-4 img-container">
-                <h2>Visit to Seroma</h2>
-                <img src="Visit to Kayunga.jpeg" alt="Visit to Kayunga" class="img-fluid">
-            </div>
-
-            <div class="col-md-4 img-container">
-                <h2>Hardware Maintenance</h2>
-                <img src="Hardware maintenance.jpeg" alt="Hardware Maintenance" class="img-fluid">
-            </div>
-
-            <div class="col-md-4 img-container">
-                <h2>Ethernet Cable Termination</h2>
-                <img src="cable termination.jpeg" alt="Ethernet Cable Termination" class="img-fluid">
-            </div>
-        </div>
-
+        <h1>Education Page</h1>
+        <section id="Education">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>School</th>
+                        <th>Duration</th>
+                        <th>Degree</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Hillside Academy</td>
+                        <td>2007 - 2015</td>
+                        <td>Primary Level Certificate</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Maryhill Secondary School</td>
+                        <td>2016 - 2018</td>
+                        <td>O'Level Certificate</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>IPRC Kigali</td>
+                        <td>2019 - 2022</td>
+                        <td>A'Level Certificate in Computer Networking</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Uganda Christian University</td>
+                        <td>2023 - 2024</td>
+                        <td>Diploma in IT</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1>Languages</h1>
+            <ul>
+                <li>Kinyarwanda: Excellent</li>
+                <li>English: Very Good</li>
+            </ul>
+        </section>
         <nav class="text-center mt-4">
-            <button class="btn btn-custom"><a href="assignment.html" class="nav-link">Home Page</a></button>
-            <button class="btn btn-custom"><a href="profile.html" class="nav-link">Profile Page</a></button>
-            <button class="btn btn-custom"><a href="education.html" class="nav-link">Education Page</a></button>
-            <button class="btn btn-custom"><a href="work experience.html" class="nav-link">Work Experience Page</a></button>
+            <ul class="list-unstyled">
+                <button class="btn btn-custom"><a href="assignment.html" class="nav-link">Home Page</a></button>
+                <button class="btn btn-custom"><a href="profile.html" class="nav-link">Profile Page</a></button>
+                <button class="btn btn-custom"><a href="work experience.html" class="nav-link">Work Experience Page</a></button>
+                <button class="btn btn-custom"><a href="gallery.html" class="nav-link">Gallery Page</a></button>
+            </ul>
         </nav>
     </div>
 
