@@ -1,77 +1,85 @@
-<!DOCTYPE hmtl>
-<html>
-    <head>
-        <body>
-            <style>
-                h1{
-                    color: white;
-                    font-size: 40px;
-                    text-align: start;
-                    font-family: 'Times New Roman', Times, serif; 
-        
-                }
-                 body{
-                    color: white;
-                    background-color: #333;
-                    font-family: 'Times New Roman', Times, serif;
-                    
-                } 
-                
-                
-            </style>            
-            <h1>Education page</h1>            
-            <section id="Education ">
-                <table border="4px" width="800px">
-                    <tr>
-                        <td>No</td>
-                        <td>School</td>
-                        <td>Duration(for how long)</td>
-                        <td>Degree</tr>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Hillside academy</td>
-                        <td>2007_2015</td>
-                        <td>primary level certificate</td>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background for contrast */
+            color: #333; /* Dark text for readability */
+            font-family: 'Times New Roman', Times, serif; /* Consistent font */
+        }
+        h1 {
+            font-size: 40px;
+            margin-top: 20px;
+            color: #007bff; /* Bootstrap primary color */
+            text-align: center; /* Center align the main title */
+        }
+        .img-container {
+            margin-bottom: 30px;
+            text-align: center; /* Center text */
+            transition: transform 0.2s; /* Smooth scaling on hover */
+        }
+        .img-container:hover {
+            transform: scale(1.05); /* Scale up on hover */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        }
+        .img-fluid {
+            width: 100%; /* Full width */
+            height: 200px; /* Fixed height */
+            object-fit: cover; /* Cover the area while maintaining aspect ratio */
+            border-radius: 10px; /* Rounded corners */
+        }
+        .btn-custom {
+            background-color: #6c757d; /* Grey button color */
+            border: none;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #5a6268; /* Darker grey on hover */
+        }
+        .nav-link {
+            color: white; /* White text for links */
+            text-decoration: none; /* No underline */
+        }
+        .nav-link:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gallery Page</h1>
+        <div class="row">
+            <div class="col-md-4 img-container">
+                <h2>Visit to Seroma</h2>
+                <img src="Visit to Kayunga.jpeg" alt="Visit to Kayunga" class="img-fluid">
+            </div>
 
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Maryhill secondary school</td>
-                        <td>2016_2018</td>
-                        <td>o'level certificate</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>IPRC kigali</td>
-                        <td>2019_2022</td><nav>
-                        <td>A'level certificate in computer networking</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Uganda christian university</td>
-                        <td>2023_2024</td><nav>
-                        <td>Diploma in IT</td>
-                    </tr>
-                </table>
-                <h1>Languages</h1>
-                <ul>
-                    <li>Kinyarwanda:  Excellent</li><br>
-                    <li>English:   Very good</li><br>
-                  
-                </ul>
-            </section>
-            <nav>
-                <ul>
-                    <button><li><a href ="assignment.html">Home page</a><br></li></button>
-                    <button><li><a href ="profile.html">Profile page</a></li></button>
-                    <button><li><a href ="work experience.html">Work experience page</a></li></button>
-                    <button><li><a href ="Gallery.html">Gallery page</a></li></button><br><br> 
-                </ul>
-            </nav>
-           
-              
-            
-        </body>
-    </head>
+            <div class="col-md-4 img-container">
+                <h2>Hardware Maintenance</h2>
+                <img src="Hardware maintenance.jpeg" alt="Hardware Maintenance" class="img-fluid">
+            </div>
+
+            <div class="col-md-4 img-container">
+                <h2>Ethernet Cable Termination</h2>
+                <img src="cable termination.jpeg" alt="Ethernet Cable Termination" class="img-fluid">
+            </div>
+        </div>
+
+        <nav class="text-center mt-4">
+            <button class="btn btn-custom"><a href="assignment.html" class="nav-link">Home Page</a></button>
+            <button class="btn btn-custom"><a href="profile.html" class="nav-link">Profile Page</a></button>
+            <button class="btn btn-custom"><a href="education.html" class="nav-link">Education Page</a></button>
+            <button class="btn btn-custom"><a href="work experience.html" class="nav-link">Work Experience Page</a></button>
+        </nav>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
